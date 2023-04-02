@@ -1,8 +1,7 @@
 #If array nums contains atleat one pair of duplicates, return true. Else return False 
 
-nums = [1,2,3,4,1]
 
-def containsDuplicate(self, nums: list[int]) -> bool:
+def containsDuplicate(nums):
     hashset = set()
     
     for n in nums:
@@ -10,3 +9,6 @@ def containsDuplicate(self, nums: list[int]) -> bool:
             return True
         hashset.add(n)
     return False
+
+print(containsDuplicate([1,2,3,4,1]))
+print(containsDuplicate([2,3,4,1]))
