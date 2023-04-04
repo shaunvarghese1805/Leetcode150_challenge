@@ -15,3 +15,7 @@ def topkfreq(nums, k):
         result.append(sorted_check[i][0])
     
     return result
+#test cases
+print(topkfreq([1,1,1,2,2,3], 2))
+print(topkfreq([1], 1))
+print(topkfreq([1,2], 2))
