@@ -6,7 +6,9 @@ def topkfreq(nums, k):
 
     for n in nums:
         check[n] += 1
-    
+    #here we are sorting the dictionary based on the values
+    #lamda function is used to sort the dictionary based on the values
+    # instead of lambda we can use a function to do the same
     sorted_check = sorted(check.items(), key = lambda x:x[1], reverse= True)
 
     result = []
