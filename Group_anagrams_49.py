@@ -4,10 +4,12 @@ from collections import defaultdict
 def groupAnagrams(strs):
     hashset = defaultdict(list)
     result = []
+
+    #here the key is the sorted string and the value is the list of strings
     for s in strs:
         s_sorted = tuple(sorted(s))
         hashset[s_sorted].append(s)
-
+    #this is to get the values from the dictionary and append it to the result array
     for value in hashset.values():
         result.append(value)
     return result
