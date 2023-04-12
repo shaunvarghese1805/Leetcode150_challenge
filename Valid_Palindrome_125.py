@@ -11,3 +11,5 @@ def isPalindrome(s):
         return newstr == inv_newstr
            
 #Test cases
+s = "A man, a plan, a canal: Panama"
+print(isPalindrome(s))
