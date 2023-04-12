@@ -15,5 +15,10 @@ def twoSum(numbers, target):
         else:
             return [l + 1, r + 1]
         
+#Test cases
+numbers = [2,7,11,15]
+target = 9
+print(twoSum(numbers, target))
+        
 
    
