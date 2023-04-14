@@ -22,3 +22,7 @@ def threeSum(nums):
                 while l < r and nums[r] == nums[r + 1]:
                     r -= 1
     return result
+
+#test case
+nums = [-1, 0, 1, 2, -1, -4]
+print(threeSum(nums))
