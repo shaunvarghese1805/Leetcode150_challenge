@@ -23,6 +23,10 @@ def threeSum(nums):
                     r -= 1
     return result
 
-#test case
+#3 test case
+nums = [0, 0, 0, 0]
+print(threeSum(nums))
 nums = [-1, 0, 1, 2, -1, -4]
+print(threeSum(nums))
+nums = [-2, 0, 1, 1, 2]
 print(threeSum(nums))
